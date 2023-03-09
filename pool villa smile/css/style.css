@@ -1,0 +1,579 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+nav {
+    background: #126E82;
+    height: 60px;
+    
+}
+
+.nav-flex {
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.nav-logo a{
+    font-family: "permanent marker";
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.social-item{
+    width: 20px;
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+.social-item li a{
+    color: #fff;
+    width: 10px;
+    padding: 1rem;
+    height: 50px;
+    
+    transition: .3s;
+}
+
+.social-item li a:hover{
+   transform: translateY(-10px);
+   border-bottom: 2px solid #D8E3E7;
+   box-shadow: 3px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* end nav */
+#banner{
+    height: 140vh;
+    background: url(../img/banner1.jpg);
+    animation-name: banner;
+    animation-duration: 4s;
+    transition: .3s; 
+    background-size: cover;
+}
+.booking-form{
+    width: 50%;
+    height: 400px;
+}
+
+.booking-title{
+    height: 80px;
+    padding: 20px;
+    text-align: center;
+}
+
+.booking-title h2{
+    color: white;
+    font-weight: bold;
+}
+div.elem-group {
+    /* margin: 20px 0; */
+  }
+  
+  div.elem-group.inlined {
+    width: 49%;
+    display: inline-block;
+    float: left;
+    margin-left: 1%;
+  }
+  
+  label {
+    display: block;
+    /* font-family: 'Nanum Gothic'; */
+    padding-bottom: 10px;
+    font-size: 1.25em;
+    color: #fff;
+  }
+  
+  input, select, textarea {
+    border-radius: 2px;
+    border: 2px solid #777;
+    box-sizing: border-box;
+    font-size: 1.25em;
+    /* font-family: 'Nanum Gothic'; */
+    width: 100%;
+    padding: 10px;
+  }
+  
+  div.elem-group.inlined input {
+    width: 95%;
+    display: inline-block;
+  }
+  
+  textarea {
+    height: 100px;
+  }
+  
+  hr {
+    border: 1px dotted #ccc;
+  }
+  
+  button {
+    /* height: 50px; */
+    margin-top: 15px;
+    background: #ff1784;
+    border: none;
+    color: white;
+    font-size: 1.25em;
+    padding: 5px 10px;
+    /* font-family: 'permanent marker'; */
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: black;
+    padding: 5px 10px;
+  }
+
+/* @keyframes banner{
+    from{ background-image: url(../img/banner.jpg);}
+    to{ background-image: url(../img/banner1.jpg);}
+}   */
+
+.banner-img img{
+    width: 100%;
+    height: 150vh;
+}
+/* end banner */
+
+#about{
+    height: 400px;
+}
+
+.about-house{
+    text-align: center;
+    padding: 50px;
+}
+
+.house-facility{
+    text-align: center;
+    list-style: none;
+}
+
+.house-facility p{
+    margin-top: 15px;
+    padding: 10px;
+}
+
+/* @keyframes about{
+    from{ background-image: url(../img/rates.jpg);}
+    to{ background-image: url(../img/review7.jpg);}
+} */
+
+
+
+
+#house-rates{
+    height: 400px;
+}
+
+.house-rate-title{
+    text-align: center;
+    padding: 50px;
+}
+
+.house-rate-flex{
+    display: flex;
+}
+
+.house-rate-item{
+    width: 100%;
+    height: 200px;
+    position: relative;
+    margin: .5rem;
+    transition: .3s;
+    border-radius: 5px;
+}
+
+.house-rate-item:hover{
+    transform: translateY(-10px);
+    box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.2);
+}
+.house-rate-item img{
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    position: relative;
+    transition: .3s;
+}
+
+.house-rate-item h3{
+    font-size: .8rem;
+    color: #fff;
+}
+
+.house-rate-item .price{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background: #ff1784;
+    color: #fff;
+    padding: 2px 7px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.house-rate-item .price:hover{
+   background: #51C4D3;
+   padding: 2px 7px;
+   border-radius: 5px;
+}
+
+.house-rate-item figcaption{
+    position: absolute;
+    bottom: 3rem;
+    left: 1rem;
+}
+
+.house-rate-item a{
+    position: absolute;
+    bottom: 1rem;
+    left: 4rem;
+    background: #ff1784;
+    color: #fff;
+    padding: 2px 8px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.house-rate-item a:hover{
+    background: #51C4D3;
+    padding: 2px 7px;
+    border-radius: 5px;
+}
+
+/* end house rate */
+.overview-title{
+    text-align: center;
+    padding: 50px;
+}
+
+.grid-container{
+    text-align: center;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 300px 300px;
+    grid-gap: .5rem;
+}
+
+.overview-grid-item:nth-child(1){
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+.overview-grid-item:nth-child(2){
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.overview-grid-item:nth-child(3){
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+
+.overview-grid-item:nth-child(4){
+    grid-column: 3/5;
+    grid-row: 2/3;
+}
+
+.overview-grid-item:nth-child(1) .overview-grid-img{
+    width: 100%;
+    height: 100%;
+    background: url(../img/facility3.jpg);
+    background-size: cover;
+}
+
+.overview-grid-item:nth-child(2) .overview-grid-img{
+    width: 100%;
+    height: 100%;
+    background: url(../img/facility.jpg);
+    background-size: cover;
+}
+
+.overview-grid-item:nth-child(3) .overview-grid-img{
+    width: 100%;
+    height: 100%;
+    background: url(../img/facility4.jpg);
+    background-size: cover;
+}
+.overview-grid-item:nth-child(4) .overview-grid-img{
+    width: 100%;
+    height: 100%;
+    background: url(../img/facility1.jpg);
+    background-size: cover;
+}
+
+
+.overview-grid-item {
+    width: 100%;
+    position: relative;
+    transition: .4s;
+    border-radius: 5px;
+    overflow: hidden;
+    color: #fff;
+}
+
+.overview-grid-item:hover{
+    transform: translateY(-10px);
+    box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.overview-grid-item p{
+    padding: 1.5rem;
+    position: absolute;
+    bottom: 0;
+    font-weight: bold;
+
+}
+.overview-grid-item img{
+    width: 100%;
+
+}
+/* end overview */
+
+#review{
+    height: 500px;
+}
+.review-title{
+    text-align: center;
+    padding: 50px;
+}
+
+.review-flex{
+    display: flex;
+}
+
+.review-flex-item{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    transition: .3s;
+    border-radius: 5px;
+}
+
+.review-flex-item:hover{
+    transform: translateY(-10px);
+    box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.review-flex-item img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.review-flex-item h3{
+    margin-top: 15px;
+}
+
+.review-flex-item p{
+    padding: 5px;
+}
+
+.review-flex-item a{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    cursor: pointer;
+    background: #51C4D3;
+    padding: 2px 8px;
+    border-radius: 5px;
+    color: white;
+}
+
+.review-flex-item a:hover{
+    transform: translateY(-10px);
+    background: #132C33;
+    border-radius: 5px;
+    padding: 2px 8px;
+}
+/* end review */
+
+footer{
+    height: 250px;
+    background: #132C33;
+    color: #fff;
+}
+
+.footer-flex{
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-item{
+    width: 100%;
+    padding: 30px;
+}
+
+.footer-item h1{
+    text-align: center;
+    font-family: "permanent marker";
+    margin-top: 30px;
+}
+
+.footer-item h3{
+    font-size: 1rem;
+    border-bottom: 2px solid #D8E3E7;
+}
+
+.footer-item ul li{
+    margin-top: 10px;
+    list-style: none;
+    text-decoration: none;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.footer-item ul li i{
+    color: #ff1784;
+    margin-right: 5px;
+}
+
+.footer-item ul li:hover{
+    transform: translateY(-10px);
+    margin-right: 5px;
+}
+
+.footer-item p{
+    text-align: center;
+    margin-top: 10px;
+}
+.footer-item iframe{
+    width: 100%;
+    height: 150px;
+}
+
+#footer-copyright{
+    text-align: center;
+    background: #132C33;
+    color: #fff;
+}
+/* end footer */
+
+
+/* responsive for 480 screen */
+
+@media screen and (max-width: 480px) {
+
+    nav {
+    height: 100px;
+}
+
+    .nav-flex {
+        text-align: center;
+        display: block;
+    }
+    .nav-logo a{
+        text-align: center;
+
+    }
+
+    .social-item {
+        width: 100%;
+        justify-content: center;
+        padding: 10px;
+    }
+    /* end nav */
+    #banner{
+        height: 115vh;
+    }
+
+    .booking-form{
+        width: 100%;
+        height: 400px;
+        padding: 20px;
+    }
+
+    form{
+        font-size: .9rem;
+    }
+    /* end banner */
+/* 
+    #about{
+        height: 1000px;
+        
+    }
+    .img-item{
+        display: block;
+        width: 100%;
+    }
+
+    .info-item{
+        display: block;
+    }
+    end about */
+    #house-rates{
+        height: 1000px;
+    }
+    .house-rate-flex{
+        display: block;
+    }
+
+    .house-rate-item img{
+        width: 97%;
+    }
+    
+    .house-rate-item a{
+        right: 2rem;
+        padding: 5px 10px;
+    }
+/* end house rates */
+    .grid-container{
+        grid-template-rows: repeat(4,300px);
+    }
+
+    .overview-grid-item:nth-child(1) {
+        grid-column: 1/7;
+        grid-row: 1/2;
+    }
+    .overview-grid-item:nth-child(2) {
+        grid-column: 1/7;
+        grid-row: 2/3;
+    }
+    .overview-grid-item:nth-child(3) {
+        grid-column: 1/7;
+        grid-row: 3/4;
+    }
+    .overview-grid-item:nth-child(4) {
+        grid-column: 1/7;
+        grid-row: 4/5;
+    }
+    /* end overview */
+
+    #review{
+        height: 1200px;
+    }
+
+    .review-flex{
+        display: block;
+    }
+
+    footer{
+        height: 700px;
+    }
+
+    .footer-flex{
+        display: block;
+    }
+}
+/* end footer */

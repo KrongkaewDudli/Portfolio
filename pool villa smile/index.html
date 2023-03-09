@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmileHouse</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <div class="nav-flex">
+                <div class="nav-logo">
+                    <a href="slideto:footer">SmileHouse</a>
+                </div>
+        
+                <div class="social-item">
+                    <li><a href="https://www.facebook.com/SmileHouse.Khaoyai/?ref=page_internal"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="mailto:smilehouse.khaoyai@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
+                    <li><a href="callto:0863504443"><i class="fa-solid fa-phone"></a></i></li>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- end nav -->
+
+    <section id="banner">
+        <div class="container">
+            <div class="booking-form">
+                <div class="booking-title">
+                    <h2>Reservation</h2>
+                </div>
+                <form action="reservation.php" method="post">
+                    <div class="elem-group">
+                      <label for="name">Your Name</label>
+                      <input type="text" id="name" name="visitor_name" placeholder="smilehouse" pattern=[A-Z\sa-z]{3,20} required>
+                    </div>
+                    <div class="elem-group">
+                      <label for="email">Your E-mail</label>
+                      <input type="email" id="email" name="visitor_email" placeholder="smilehouse@email.com" required>
+                    </div>
+                    <div class="elem-group">
+                      <label for="phone">Your Phone</label>
+                      <input type="tel" id="phone" name="visitor_phone" placeholder="498-348-3872" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+                    </div>
+                    <hr>
+                    <div class="elem-group inlined">
+                      <label for="adult">Adults</label>
+                      <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+                    </div>
+                    <div class="elem-group inlined">
+                      <label for="child">Children</label>
+                      <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
+                    </div>
+                    <div class="elem-group inlined">
+                      <label for="checkin-date">Check-in Date</label>
+                      <input type="date" id="checkin-date" name="checkin" required>
+                    </div>
+                    <div class="elem-group inlined">
+                      <label for="checkout-date">Check-out Date</label>
+                      <input type="date" id="checkout-date" name="checkout" required>
+                    </div>
+                    <div class="elem-group">
+                      <label for="room-selection">Select Room Preference</label>
+                      <select id="room-selection" name="room_preference" required>
+                          <option value="">Choose a Room from the List</option>
+                          <option value="connecting">Connecting</option>
+                          <option value="adjoining">Adjoining</option>
+                          <option value="adjacent">Adjacent</option>
+                      </select>
+                    </div>
+                    <hr>
+                    <div class="elem-group">
+                      <label for="message">Anything Else?</label>
+                      <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important." required></textarea>
+                    </div>
+                    <button type="submit">Book</button>
+                  </form>
+            </div>
+        </div>
+    </section>
+    <!-- end banner -->
+    <section id="about">
+        <div class="container">
+            <div class="about-house">
+                <h2>About SmileHouse</h2>
+                <p>See what facilities we provide</p>
+            </div>
+
+            <div class="house-facility">
+                <li>4 ห้องนอน</li>
+                <li>5 ห้องน้ำ</li>
+                <li>1 ห้องโถง+ห้องคาราโอเกะ+โต๊ะสนุ๊ก</li>
+                <li>2 ห้องครัว</li>
+                <li>สะว่ายน้ำ+สไลด์เดอร์</li>
+                <li>ที่จอดรถสำหรับ 4-5 คัน</li>
+                <br>
+                <li>**เด็กต่ำกว่า 6 ขวบพักฟรี</li>
+                <li>**เสริมเตียง เตียงละ ฿500</li>
+                <li>**บ้านสามารถจุคนได้สูงสุด 20 ท่าน</li>
+            </div>
+        </div> 
+        
+    </section>
+    <!-- end about -->
+
+    <section id="house-rates">
+        <div class="container">
+            <div class="house-rate-title">
+                <h2>Our House Rates</h2>
+                <P>See which rates you desire</P>
+            </div>
+
+            <div class="house-rate-flex">
+
+                <div class="house-rate-item">
+                    <img src="img/review7.jpg" alt="">
+                    <span class="price">฿11,000</span>
+                    <figcaption>
+                        <h3>วันอาทิตย์-วันพฤหัสบดี 14 ท่าน</h3>
+                    </figcaption>
+                    <br>
+                    <a href="callto:0863504443">Book Now</a>
+                </div>
+
+                <div class="house-rate-item">
+                    <img src="img/review7.jpg" alt="">
+                    <span class="price">฿15,000</span>
+                    <figcaption>
+                        <h3>วันศุกร์-วันเสาร์ 14 ท่าน</h3>
+                    </figcaption>
+                    <br>
+                    <a href="callto:0863504443">Book Now</a>
+                </div>
+
+                <div class="house-rate-item">
+                    <img src="img/review7.jpg" alt="">
+                    <span class="price">฿17,000</span>
+                    <figcaption>
+                        <h3>วันนักขัตฤกษ์ 14 ท่าน</h3>
+                    </figcaption>
+                    <br>
+                    <a href="callto:0863504443">Book Now</a>
+                </div>
+
+                <div class="house-rate-item">
+                    <img src="img/review7.jpg" alt="">
+                    <span class="price">฿19,000</span>
+                    <figcaption>
+                        <h3>วันเทศกาล ปีใหม่ สงกรานต์ Big Mountain 14 ท่าน</h3>
+                    </figcaption>
+                    <br>
+                    <a href="callto:0863504443">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end rates -->
+
+    <section id="Overview">
+        <div class="container">
+            <div class="overview-title">
+                <h2>Our House Overview</h2>
+                <p>See our house facilities</p>
+            </div>
+        </div>
+
+        <div class="grid-container">
+            <div class="overview-grid-item">
+                <div class="overview-grid-img"></div>
+                <p>Snooker</p>
+            </div>
+            <div class="overview-grid-item">
+                <div class="overview-grid-img"></div>
+                <p>Karaoke</p>
+            </div>
+            <div class="overview-grid-item">
+                <div class="overview-grid-img"></div>
+                <p>Kitchen</p>
+            </div>
+            <div class="overview-grid-item">
+                <div class="overview-grid-img"></div>
+                <p>Swimming Pool</p>
+            </div>            
+        </div>
+    </section>
+    <!-- end overview -->
+
+    <section id="review">
+        <div class="container">
+            <div class="review-title">
+                <h2>Our Customer Reviews</h2>
+                <p>See what our customers said about SmileHouse</p>
+            </div>
+
+            <div class="review-flex">
+                <div class="review-flex-item">
+                    <img src="img/user5.png" alt="review">
+                    <h4>Audi Soda</h4>
+                    <p>The house is clean and beautiful with a nice view. big recommend to all of you who are searching for a nice house with great location for partying with family and friends on your holidays.</p>
+                </div>
+                <div class="review-flex-item">
+                    <img src="img/user1.png" alt="review">
+                    <h4>App Story Boom Boom</h4>
+                    <p>A lovely house with a lovely housemaid.</p>
+                </div>
+                <div class="review-flex-item">
+                    <img src="img/user2.png" alt="review">
+                    <h4>Sirirat</h4>
+                    <p>แนะนำเลยครัชที่นี่ บ้านพักสะอาดมาก สระว่ายสะอาดสุดยอด ไฟกลางคืนตกแต่งไว้สวยงาม เครื่องครัวครบครัน แม่บ้านใจดีคอยดูแลตลอด มีซ้ำแน่นวล</p>
+                </div>
+
+                <div class="review-flex-item">
+                    <img src="img/user.png" alt="">
+                    <br><br>
+                    <a href="https://www.facebook.com/SmileHouse.Khaoyai/reviews/?ref=page_internal">More Reviews</a>
+                </div>
+            </div>
+
+           
+        </div>
+    </section>
+    <!-- end review -->
+
+    <footer>
+        <div class="container">
+            <div class="footer-flex">
+                <div class="footer-item">
+                    <h1>SmileHouse</h1>
+                    <br><br>
+                    <p>234/109 หมู่ที่ 14 ตำบล หมูสี อำเภอปากช่อง นครราชสีมา 30130</p>
+                </div>
+                <div class="footer-item">
+                    <h3>Payment Method</h3>
+                    <br><br>
+                    <ul>
+                        <li><i class="fa-solid fa-arrow-right"></i> KBank</li>
+                    </ul>
+                </div>
+                <div class="footer-item">
+                    <h3>Location</h3>
+                    <br><br>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3862.2196764238756!2d101.46331269999999!3d14.529423399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311c3149b3d6d639%3A0x7087fee995592690!2z4Lia4LmJ4Liy4LiZ4Lie4Lix4LiB4LmA4LiC4Liy4LmD4Lir4LiN4LmIIFNtaWxlIEhvdXNlIFBvb2wgVmlsbGEgS2hhb3lhaQ!5e0!3m2!1sth!2sth!4v1677854569316!5m2!1sth!2sth" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <section id="footer-copyright">
+        <div class="copyright">
+            <p>&copy;2023.SmileHouse.</p>
+        </div>
+    </section>
+</body>
+</html>
